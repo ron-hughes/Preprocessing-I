@@ -1,4 +1,5 @@
-// Is this working?
+@import url("fontawesome-all.min.css");
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,7 +54,140 @@ table {
     box-sizing: border-box;
 }
 
+
 html, body {
-    height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
+
+//  LESS // 
+
+@sectionBackground: red; 
+
+.container {
+	margin: 0 auto;
+	width: 	1060px;
+	height: 1000px;
+	background-color: whitesmoke;
+	box-shadow: 0px 9px 42px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 0px 9px 42px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 9px 42px 0px rgba(0,0,0,0.75);	
+	
+	h1 {
+		color: red;
+		font-size: 2rem;
+	}
+
+	.banner {
+		max-width: 100%;
+		height:300px;
+		position: relative;
+		background-color: #333;
+	}
+
+	.nav {
+		display: flex;
+		justify-content: space-between;
+		background-color: rgb(158, 91, 158, 0.5);
+		color: #000;
+		list-style: none;
+		text-align: left;
+		padding: 20px 0 20px 0;
+	}
+
+	/* NAV MENU */
+
+	.nav > li {
+		color: purple;
+		font-size: 2rem;
+		display: inline-block;
+	}
+
+	.nav > li a {
+		text-decoration: none;
+		color: aqua;
+	}
+
+	
+	.icons {
+		display: flex;
+
+	}
+	
+	/* POLAROID HEADER */
+
+	.polaroid-images {
+		background:inherit;                             
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		top: -270px;
+		left: 245px;
+		background: #fff;
+		width: 0px;
+	}
+
+	.polaroid-images a {
+    background: white;
+    display: inline;
+    float: left;
+    margin: 0 15px 30px;
+    padding: 10px 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,.3);
+    -webkit-transition: all .15s linear;
+    -moz-transition: all .15s linear;
+    transition: all .15s linear;
+    z-index:0;
+    position:relative;
+	}
+
+
+	.polaroid-images a:after {
+		color: #333;
+		font-size: 20px;
+		content: attr(title);
+		position: relative;
+		top:15px;
+		font-family: cursive;
+	}
+
+	.polaroid-images img { 
+		display: block; 
+		max-width: inherit; 
+	}
+
+	.polaroid-images a:hover{
+		-webkit-transform: rotate(0deg); 
+		-moz-transform: rotate(0deg);
+			transform: rotate(0deg);
+		-webkit-transform: scale(1.2); 
+		-moz-transform: scale(1.2);
+			transform: scale(1.2);
+		z-index:10;
+		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+		-moz-box-shadow: 0 10px 20px rgba(0,0,0,.7);
+			box-shadow: 0 10px 20px rgba(0,0,0,.7);
+	}
+
+	.sections {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: @sectionBackground;
+		width: 50%;
+		height: 400px;
+		position: relative;
+	}
+	
+	.section-container {
+		background:powderblue;
+		width: 100%;
+
+
+	}
+}
