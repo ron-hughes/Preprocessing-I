@@ -107,10 +107,11 @@ section {
 }
 body {
   line-height: 1;
+  font-family: "Roboto", sans-serif;
 }
 ol,
 ul {
-  list-style: none;
+  list-style-position: inside;
 }
 blockquote,
 q {
@@ -120,7 +121,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -133,112 +134,187 @@ table {
 }
 html,
 body {
-  margin: 0;
-  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  text-align: center;
+}
+.flex-class {
+  display: flex;
 }
 .container {
+  background-image: url("../images/background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   margin: 0 auto;
-  width: 1060px;
-  height: 1000px;
-  background-color: whitesmoke;
-  box-shadow: 0px 9px 42px 0px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 0px 9px 42px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 9px 42px 0px rgba(0, 0, 0, 0.75);
+  max-width: 100%;
   /* NAV MENU */
-  /* POLAROID HEADER */
+  /* SECTIONS */
 }
 .container h1 {
   color: red;
   font-size: 2rem;
 }
-.container .banner {
-  max-width: 100%;
-  height: 300px;
-  position: relative;
-  background-color: #333;
-}
-.container .nav {
-  display: flex;
-  justify-content: space-between;
-  background-color: #9e5b9e;
+.container h2 {
   color: #000;
-  list-style: none;
-  text-align: left;
-  padding: 20px 0 20px 0;
+  font-size: 1.7rem;
 }
-.container .nav > li {
-  color: purple;
-  font-size: 2rem;
-  display: inline-block;
-}
-.container .nav > li a {
+.container a {
   text-decoration: none;
-  color: aqua;
+  color: white;
+}
+.container a:hover {
+  color: powderblue;
 }
 .container .icons {
   display: flex;
-}
-.container .polaroid-images {
-  background: inherit;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: -270px;
-  left: 245px;
-  background: #fff;
-  width: 0px;
-}
-.container .polaroid-images a {
-  background: white;
-  display: inline;
-  float: left;
-  margin: 0 15px 30px;
-  padding: 10px 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-  z-index: 0;
-  position: relative;
-}
-.container .polaroid-images a:after {
-  color: #333;
-  font-size: 20px;
-  content: attr(title);
-  position: relative;
-  top: 15px;
-  font-family: cursive;
-}
-.container .polaroid-images img {
-  display: block;
-  max-width: inherit;
-}
-.container .polaroid-images a:hover {
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  transform: scale(1.2);
-  z-index: 10;
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
-}
-.container .sections {
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  background: purple;
+  padding: 20px;
+}
+.container .icons p {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 100px;
+}
+.container .icons i {
+  color: white;
+  padding-right: 20px;
+}
+.container .icons .fa-github:hover {
+  color: powderblue;
+}
+.container .icons .fa-twitter:hover {
+  color: powderblue;
+}
+.container .icons .fa-linkedin:hover {
+  color: powderblue;
+}
+.container .zoom {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  transition: transform 0.2s;
+}
+.container .zoom:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+}
+.container .handsome-man {
+  -webkit-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
+}
+.container .handsome-man p {
+  text-align: center;
+}
+.container .handsome-man p.ron-hughes {
+  font-family: "Pacifico", cursive;
+  font-size: 2.3rem;
+}
+.container .skillset {
+  align-items: center;
+  background: white;
+  height: 300px;
+  width: 100%;
+}
+.container .skillset .skillcontainer {
+  width: 80%;
+  background-color: linen;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.container .skillset .skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  pacolor: white;
+}
+.container .skillset .skill-html {
   background: red;
-  width: 50%;
-  height: 400px;
+  width: 80%;
+  border-radius: 20px;
+}
+.container .skillset .skill-css {
+  background: green;
+  width: 35%;
+  border-radius: 20px;
+}
+.container .skillset .skill-javascript {
+  background: purple;
+  width: 10%;
+  border-radius: 20px;
+}
+.container .other-skills {
+  background: linen;
+  height: 150px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 30px;
+}
+.container .other-skills ul {
+  font-family: "Atma", cursive;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container .center {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-top: 20px;
   position: relative;
+  align-content: center;
+}
+.container .handsome-man img {
+  height: 300px;
+  width: 300px;
 }
 .container .section-container {
-  background: powderblue;
-  width: 100%;
+  background-color: none;
+  width: 820px;
+  height: 500px;
+  position: relative;
+  border-radius: 10px;
+  align-content: flex-start;
+  -webkit-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+}
+.container .section-container ul {
+  text-indent: 25px;
+}
+.container .section-container p {
+  font-weight: 900;
+}
+.container .section-1 {
+  background: linen;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.container .section-2 {
+  background: linen;
+  padding: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.container .section-2 .current {
+  background: #800080;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container .section-3 {
+  background: white;
+  max-width: 100%;
 }
