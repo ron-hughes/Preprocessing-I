@@ -1,59 +1,349 @@
-// Is this working?
+@import url("fontawesome-all.min.css");
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  // list-style: none;
+  list-style-position: inside;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  font-family: "Roboto", sans-serif;
 }
 
+
+h2 {
+  text-align: center;
+}
+
+//  MIX-INS AND VARIABLES //
+
+.flex-class(@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-content: @align;
+}
+
+
+
+
+// CONTAINER //
+
+.container {
+  background-image: url("../images/background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+
+  h1 {
+    color: red;
+    font-size: 2rem;
+  }
+
+  h2 {
+    color: #000;
+    font-size: 1.7rem;
+  }
+
+  /* TOP MENU */
+  .icons {
+    .flex-class(flex-end, center);
+    background: purple;
+    padding: 20px;
+    p {
+      color: white;
+      font-size: 1.3rem;
+      padding-right: 100px;
+    }
+    i {
+      color: white;
+      padding-right: 20px;
+    }
+    .fa-github:hover {
+      color: powderblue;
+    }
+    .fa-twitter:hover {
+      color: powderblue;
+    }
+    .fa-linkedin:hover {
+      color: powderblue;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: powderblue;
+  }
+  
+// SIDE MENU //
+
+.handsome-man {
+  -webkit-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  p {
+    text-align: center;
+  }
+  p.ron-hughes {
+    font-family: "Pacifico", cursive;
+    font-size: 2.3rem;
+  }
+  border-radius: 20px;
+}
+
+.handsome-man img {
+  height: 300px;
+  width: 300px;
+}
+
+  .zoom {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    transition: transform 0.2s;
+  }
+  .zoom:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.1);
+  }
+
+
+
+  // SKILL SET SECTION //
+  
+  .skillset {
+    align-items: center;
+    background: white;
+    height: 300px;
+    width: 100%;
+
+    .skillcontainer {
+      width: 80%;
+      background-color: linen;
+      margin: 10px auto;
+      border-radius: 10px;
+    }
+    .skills {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: white;
+    }
+    .skill-html {
+      background: red;
+      width: 80%; // HTML 75%
+      border-radius: 20px;
+    }
+    .skill-css {
+      background: green;
+      width: 35%; // CSS  35%
+      border-radius: 20px;
+    }
+    .skill-javascript {
+      background: purple;
+      width: 10%; // CSS  10%
+      border-radius: 20px;
+    }
+  }
+
+  .other-skills {
+    background: linen;
+    height: 150px;
+    width: 300px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 30px;
+
+    ul {
+      font-family: "Atma", cursive;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+  /* SECTIONS */
+
+  .center {
+    .flex-class(space-around, center);
+    margin: 0 auto;
+    margin-left: 30px;
+    margin-top: 20px;
+    position: relative;
+  }
+  
+
+  .section-container {
+    background-color: white;
+    width: 820px;
+    height: 820px;
+    position: relative;
+    border-radius: 10px;
+    align-content: flex-start;
+    -webkit-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+
+    ul {
+      text-indent: 25px;
+    }
+    p {
+      font-weight: 900;
+    }
+  }
+  .sub-section {
+    background: linen;
+    padding: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    .current {
+      background: rgb(128, 0, 128, 0.1);
+      color: white;
+      border-radius: 10px;
+      width: 200px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

@@ -1,1 +1,310 @@
-/* Compile your LESS file! */
+@import url("fontawesome-all.min.css");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Roboto", sans-serif;
+}
+ol,
+ul {
+  list-style-position: inside;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  text-align: center;
+}
+.container {
+  background-image: url("../images/background.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  /* TOP MENU */
+  /* SECTIONS */
+}
+.container h1 {
+  color: red;
+  font-size: 2rem;
+}
+.container h2 {
+  color: #000;
+  font-size: 1.7rem;
+}
+.container .icons {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  background: purple;
+  padding: 20px;
+}
+.container .icons p {
+  color: white;
+  font-size: 1.3rem;
+  padding-right: 100px;
+}
+.container .icons i {
+  color: white;
+  padding-right: 20px;
+}
+.container .icons .fa-github:hover {
+  color: powderblue;
+}
+.container .icons .fa-twitter:hover {
+  color: powderblue;
+}
+.container .icons .fa-linkedin:hover {
+  color: powderblue;
+}
+.container a {
+  text-decoration: none;
+  color: white;
+}
+.container a:hover {
+  color: powderblue;
+}
+.container .handsome-man {
+  -webkit-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  background: #fff;
+  border-radius: 20px;
+}
+.container .handsome-man p {
+  text-align: center;
+}
+.container .handsome-man p.ron-hughes {
+  font-family: "Pacifico", cursive;
+  font-size: 2.3rem;
+}
+.container .handsome-man img {
+  height: 300px;
+  width: 300px;
+}
+.container .zoom {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  transition: transform 0.2s;
+}
+.container .zoom:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+}
+.container .skillset {
+  align-items: center;
+  background: white;
+  height: 300px;
+  width: 100%;
+}
+.container .skillset .skillcontainer {
+  width: 80%;
+  background-color: linen;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.container .skillset .skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+.container .skillset .skill-html {
+  background: red;
+  width: 80%;
+  border-radius: 20px;
+}
+.container .skillset .skill-css {
+  background: green;
+  width: 35%;
+  border-radius: 20px;
+}
+.container .skillset .skill-javascript {
+  background: purple;
+  width: 10%;
+  border-radius: 20px;
+}
+.container .other-skills {
+  background: linen;
+  height: 150px;
+  width: 300px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 30px;
+}
+.container .other-skills ul {
+  font-family: "Atma", cursive;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container .center {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 0 auto;
+  margin-left: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+.container .section-container {
+  background-color: white;
+  width: 820px;
+  height: 820px;
+  position: relative;
+  border-radius: 10px;
+  align-content: flex-start;
+  -webkit-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 73px -8px rgba(0, 0, 0, 0.75);
+}
+.container .section-container ul {
+  text-indent: 25px;
+}
+.container .section-container p {
+  font-weight: 900;
+}
+.container .sub-section {
+  background: linen;
+  padding: 20px;
+  max-width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.container .sub-section .current {
+  background: #800080;
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
